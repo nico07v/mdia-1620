@@ -153,18 +153,18 @@ nine.isHungry = false;
 
 
 
-function lateRent(monthlyRent, lateFee) {
-    let totalOwed = monthlyRent + lateFee;
-    console.log(totalOwed);
-}
-
-lateRent(diamond.monthlyBoardCost, diamond.latePaymentFee)
-
-
-// function getNickname(horse) {
-//     return horse.nickname
+// function lateRent(monthlyRent, lateFee) {
+//     let totalOwed = monthlyRent + lateFee;
+//     console.log(totalOwed);
 // }
 
-//  let chosenNickname = getNickname(diamond);
-// console.log(chosenNickname);
+// lateRent(diamond.monthlyBoardCost, diamond.latePaymentFee)
+
+
+function getNickname(horse) {
+    return horse.nickname
+}
+
+ let chosenNickname = getNickname(diamond);
+console.log(chosenNickname);
 
