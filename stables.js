@@ -140,6 +140,8 @@ peezy.isHungry = false;
 prada.isHungry = true;
 nine.isHungry = false;
 
+console.log(diamond.isHungry)
+
 let totalStalls = 8;
 
 function availableStalls(totalStalls, occupiedStalls) {
