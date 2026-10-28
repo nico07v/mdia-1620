@@ -135,4 +135,17 @@ let nine = {
 let horses = [diamond, peezy, prada]
 horses.push(nine)
 
-console.log(horses)
+diamond.isHungry = true;
+peezy.isHungry = false;
+prada.isHungry = true;
+nine.isHungry = false;
+
+let totalStalls = 8;
+
+function availableStalls(totalStalls, occupiedStalls) {
+    let emptyStalls = totalStalls - occupiedStalls;
+    console.log(emptyStalls)
+}
+
+availableStalls (totalStalls, 4);
+
