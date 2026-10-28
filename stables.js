@@ -140,14 +140,31 @@ peezy.isHungry = false;
 prada.isHungry = true;
 nine.isHungry = false;
 
-console.log(diamond.isHungry)
+// console.log(diamond.isHungry)
 
-let totalStalls = 8;
+// let totalStalls = 8;
 
-function availableStalls(totalStalls, occupiedStalls) {
-    let emptyStalls = totalStalls - occupiedStalls;
-    console.log(emptyStalls)
+// function availableStalls(totalStalls, occupiedStalls) {
+//     let emptyStalls = totalStalls - occupiedStalls;
+//     console.log(emptyStalls)
+// }
+
+// availableStalls (totalStalls, 4);
+
+
+
+function lateRent(monthlyRent, lateFee) {
+    let totalOwed = monthlyRent + lateFee;
+    console.log(totalOwed);
 }
 
-availableStalls (totalStalls, 4);
+lateRent(diamond.monthlyBoardCost, diamond.latePaymentFee)
+
+
+// function getNickname(horse) {
+//     return horse.nickname
+// }
+
+//  let chosenNickname = getNickname(diamond);
+// console.log(chosenNickname);
 
