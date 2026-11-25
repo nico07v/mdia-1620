@@ -48,3 +48,17 @@ function checkTreat(horse) {
 checkTreat(nine);
 checkTreat(prada);
 checkTreat(lucki);
+
+
+function moveOutside(horses, isDark) {
+   for (const horse of horses) {
+      if (isDark && horse.isOutside) {
+         ((horse.isOutside = false),
+            console.log(horse.name + " has come inside for bedtime!"));
+      }
+
+      if (!isDark && !horse.isOutside)
+         ((horse.isOutside = true),
+            console.log(horse.name + " has moved outside to enjoy the sun!"));
+   }
+}
