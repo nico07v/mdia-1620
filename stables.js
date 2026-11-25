@@ -24,3 +24,27 @@ let lucki = {
 
 let horses = [nine, prada, lucki];
 
+
+for (const horse of horses) {
+   if (!horse.likesApplePie) {
+      console.log(horse.name + " does not like Apple Pie");
+   }
+
+   if (horse.likesApplePie) {
+      console.log(horse.name + " likes Apple Pie!");
+   }
+}
+
+function checkTreat(horse) {
+   if (horse.likesChocolateCarrots) {
+      console.log(horse.name + " likes Chocolate Carrots!");
+   }
+
+   if (!horse.likesChocolateCarrots) {
+      console.log(horse.name + " does not like Chocolate Carrots!");
+   }
+}
+
+checkTreat(nine);
+checkTreat(prada);
+checkTreat(lucki);
