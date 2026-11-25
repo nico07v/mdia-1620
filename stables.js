@@ -62,3 +62,19 @@ function moveOutside(horses, isDark) {
             console.log(horse.name + " has moved outside to enjoy the sun!"));
    }
 }
+
+moveOutside([prada]);
+moveOutside(horses, true);
+
+function feedHorses(horses) {
+   for (const horse of horses) {
+      if (horse.isOutside) {
+         horse.isOutside = false;
+         console.log(horse.name + " has been called inside!");
+      }
+
+      console.log(horse.name + " has been fed a treat!");
+   }
+}
+
+feedHorses(horses);
